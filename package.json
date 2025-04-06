@@ -1,0 +1,39 @@
+{
+  "name": "X-KING",
+  "version": "1.0.0",
+  "description": "X-KING is a multi-device WhatsApp bot based on Baileys.",
+  "main": "./index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "restart": "npm run stop && npm run start",
+    "stop": "pkill -f 'node index.js'",
+    "logs": "tail -f nohup.out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Queen_Alya-V2/X-KING.git"
+  },
+  "keywords": [
+    "bot",
+    "ai",
+    "whatsapp",
+    "X-KING",
+    "multi-device"
+  ],
+  "author": "KING",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Queen_Alya-V2/X-KING/issues"
+  },
+  "homepage": "https://github.com/Queen_Alya-V2/X-KING#readme",
+  "dependencies": {
+    "@whiskeysockets/baileys": "6.7.8",
+    "boom": "*",
+    "express": "^4.18.2",
+    "got": "^11.8.5",
+    "pino": "^8.1.0",
+    "qrcode-terminal": "^0.12.0",
+    "dotenv": "^16.0.3"
+  }
+}
